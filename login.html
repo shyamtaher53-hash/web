@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fortune Hotel - Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);
+}
+
+.login-box{
+    width:380px;
+    padding:40px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(255,215,0,.3);
+    text-align:center;
+}
+
+.login-box h1{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    color:white;
+    margin-bottom:25px;
+}
+
+.input-box{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:none;
+    outline:none;
+    border-radius:30px;
+    font-size:16px;
+}
+
+.btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:#FFD700;
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+a{
+    color:#FFD700;
+    text-decoration:none;
+}
+
+.footer{
+    margin-top:20px;
+    color:white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="login-box">
+
+<h1>Fortune Hotel</h1>
+<p>Login to Continue</p>
+
+<form action="project.html" method="post">
+
+<input type="text" class="input-box" placeholder="Username" required>
+
+<input type="password" class="input-box" placeholder="Password" required>
+
+<button class="btn">Login</button>
+
+</form>
+
+<div class="footer">
+Don't have an account?<br>
+<a href="createnew.html">Create Account</a>
+</div>
+
+</div>
+
+</body>
+</html>
