@@ -1,19 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fortune Hotel</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);
+    font-family:'Poppins',sans-serif;
+}
+
+.container{
+    text-align:center;
+    padding:50px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 30px rgba(255,215,0,0.4);
+}
+
+h1{
+    font-family:'Cinzel',serif;
+    font-size:70px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:#FFD700;
+    text-shadow:
+        0 0 10px #FFD700,
+        0 0 20px #FFD700,
+        0 0 40px #FFA500;
+}
+
+h2{
+    margin-top:15px;
+    font-size:24px;
+    color:#ffffff;
+    letter-spacing:3px;
+}
+
+p{
+    margin-top:20px;
+    color:#dddddd;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#FFD700;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ffffff;
+    transform:scale(1.08);
+    box-shadow:0 0 20px #FFD700;
+}
+</style>
+
 </head>
-<marquee style="background-color: #e0f7fa; padding: 10px;">
-  Announcements live here!</marquee>
-<marquee behavior="12" direction="left" bgcolor="lightgray" >Hello, I am Taher!</marquee>
 <body>
-    
-    <h1>Hello, i am taher!</h1>
-    <h1>HYYY</h1>
-    <p>this is a simple paragraph.</p>
-    <link rel="stylesheet" href="taher.html">
-    <button>Click me!</button>
+
+<div class="container">
+    <h1>✦ Fortune Hotel ✦</h1>
+    <h2>Luxury • Comfort • Elegance</h2>
+
+    <p>
+        Experience world-class hospitality, luxurious rooms,
+        delicious cuisine, and unforgettable moments.
+        Your perfect stay begins at <strong>Fortune Hotel</strong>.
+    </p>
+
+   <a href="login.html" class="btn">Book Your Stay</a>
+</div>
+
 </body>
 </html>
+```
