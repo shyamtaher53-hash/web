@@ -146,31 +146,96 @@ Total Amount : ₹4,999
 
 </div>
 
-<h3>Select Payment Method</h3>
 
-<label class="payment-option">
+
+<h1>Select Payment Method</h1>
+
+<p class="subtitle">
+Choose a convenient payment option to complete your booking.
+</p>
+
+<form>
+
+<label class="payment-card">
+
 <input type="radio" name="payment" checked>
-UPI (Google Pay / PhonePe / Paytm)
+
+<div class="icon upi">
+<i class="fa-solid fa-qrcode"></i>
+</div>
+
+<div class="details">
+
+<h2><img src="data:image/png;base64,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" width="80px">UPI</h2>
+<p>Google Pay / PhonePe / Paytm</p>
+</div>
+
+<div class="logos">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRma9oykjT8aqjvBjsiWPz_XjYUrsRIDnwa6nbwYOVzEA&s=10" alt="Google Pay" width="80px" class="logo">
+<img src="data:image/png;base64,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" alt="PhonePe" width="80px" class="logo">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAACbCAMAAABmppZ+AAAAnFBMVEX///8Au/IFLnAAtvEAKm4AufKd2/gAKHAALG/7/v9tfaEAGmfDyNUmu/K/6frz+/7l+P5Qw/Nex/SE1PZodpyP2PgAF2cAIWry8/ZAWImFiacAEWWEkKwAAFwACWNzeZ2bprxgzPVDSX5QY4/L7PzZ3OV2gqMiMnI/ToPP1N7U8f2PmbO6v8+ut8hhbpdMyPQ7PXgcPHkuR38AAFKgtbQMAAADP0lEQVR4nO3ZaXeiMBiG4bBpKLRiXYhVKFRxKS7V/v//Nu8bgtrlTGe+jMo81xdD9Jx6GwwcKwQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBD+VHn0m/hAjqD3eul38MFtDzn4dLv4d97daz/MPvBsSxndj7j+349uMQb+ntZ37grC6VnyjutXCtO2Gz7/e2aBmsehCLq5RZVW9YuzyMx25FB1NpZVu/V7zzklpXPbqE8HQeVYZLMubt4q2bSZL+hgEMaBElfCTVKeCBmjo62LM+h87zl0IPVdTxa/vtWzs85zuAGNvm2ax8lJU0UL/VMvKBVHrVtO6DPQ01jGtyJmXWks/UnYI7rx9b1r/d5tmyr82x7+Kz+KPsTz4suXfUjne22q/p4I4R6S1JCtXZ7uTplj0y2531d7XqdPad+4tpxr2sfDlJ3ZjSzLjMy4nkZfsmOcqtbd0f1ave6utvb9arswaWrfsTZY/pOF3vXZFfWC2lLN/xykpPo3jIXMF9ndyPR4Y/Cy2kvc24oe0LZy7bJVsUqDMM+r/Zvsj0+kU027WCPvJf3KPuWVvs8uyjthATylD38brUbkM0n+YH63EwU0/S4k9fZ7WlYhAe3adnxNMvmUvJq+5OhtM+zeZFtdznik6Fh2dKVriv5up0VvGHTIHZNdpnyB2AucM3Kpk6p1zherfZ6K1uOpNnS1PvpdqZx2aZqJEKbV39zuoCJLI31mdDAbNkm8fCt0NlyYbJ5tal7ueCn3cZly/2STJ8KUWXbH7KF2tBdW7lv3E4e3K1IwYffrHZF6fuWRmXz7Yqhs93+OpzbJtufPLMtf7uDOb+mgdkrviuRcrGvr9tCJUHMeE9LM35NA7PVNuAtTl/Gq51cne7a7Hf9s1MDs8VaxsfbtGq1x/Wxm+pzvBHZwTgIkrNskb0EQ2M8LfgkH5pf2xbz6seiyCN1No10Ng842+PB9WeXvF+F5zOr7MmYrOjQnz9XJmvzE1mn95jnuf6vyKxHWjRo0WP+QC8Y8Mzs81+5Pop8mvINc6Qqp+c7EfGPL63miP9hBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4Kr9Ar7mTSpx9H+EAAAAAElFTkSuQmCC" alt="Paytm" width="80px" class="logo">
+</div>
+
 </label>
 
-<label class="payment-option">
+<label class="payment-card">
+
 <input type="radio" name="payment">
-Credit / Debit Card
+
+<div class="icon card">
+<i class="fa-regular fa-credit-card"></i>
+</div>
+
+<div class="details">
+<h2>Credit / Debit Card</h2>
+<p>Visa, Mastercard, RuPay & more</p>
+</div>
+
+<div class="logos">
+<img src="images/visa.png">
+<img src="images/mastercard.png">
+<img src="images/rupay.png">
+</div>
+
 </label>
 
-<label class="payment-option">
+<label class="payment-card">
+
 <input type="radio" name="payment">
-Net Banking
+
+<div class="icon bank">
+<i class="fa-solid fa-building-columns"></i>
+</div>
+
+<div class="details">
+<h2>Net Banking</h2>
+<p>All major banks supported</p>
+</div>
+
+<i class="fa-solid fa-angle-right arrow"></i>
+
 </label>
 
-<label class="payment-option">
+<label class="payment-card">
+
 <input type="radio" name="payment">
-Cash at Hotel
+
+<div class="icon cash">
+<i class="fa-solid fa-money-bill-wave"></i>
+</div>
+
+<div class="details">
+<h2>Cash at Hotel</h2>
+<p>Pay at the time of Check-in</p>
+</div>
+
 </label>
 
-<button onclick="window.location.href='confirmation.html'">
+<button class="pay-btn">
+<i class="fa-solid fa-lock"></i>
 Proceed to Pay
 </button>
+
 
 <div class="secure">
 🔒 100% Secure Payment
