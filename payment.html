@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fortune Hotel | Payment</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0F2027,#203A43,#2C5364);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.container{
+width:90%;
+max-width:700px;
+background:white;
+border-radius:15px;
+padding:35px;
+box-shadow:0 15px 30px rgba(0,0,0,.3);
+}
+
+h1{
+text-align:center;
+color:#243B55;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:#666;
+margin-bottom:30px;
+}
+
+.summary{
+background:#f4f4f4;
+padding:20px;
+border-radius:10px;
+margin-bottom:30px;
+}
+
+.summary h2{
+margin-bottom:15px;
+color:#333;
+}
+
+.summary p{
+margin:10px 0;
+font-size:17px;
+}
+
+.total{
+font-size:25px;
+font-weight:bold;
+color:#d35400;
+margin-top:15px;
+}
+
+h3{
+margin-bottom:20px;
+color:#243B55;
+}
+
+.payment-option{
+margin:15px 0;
+padding:15px;
+border:2px solid #ddd;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.payment-option:hover{
+border-color:#ff9800;
+background:#fff8ef;
+}
+
+.payment-option input{
+margin-right:10px;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:25px;
+font-size:18px;
+border:none;
+border-radius:8px;
+background:#ff9800;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#e67e22;
+}
+
+.secure{
+margin-top:20px;
+text-align:center;
+color:green;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Payment</h1>
+
+<p class="subtitle">
+Complete your booking securely
+</p>
+
+<div class="summary">
+
+<h2>Booking Summary</h2>
+
+<p><strong>Name:</strong> John Doe</p>
+
+<p><strong>Service:</strong> Deluxe Room</p>
+
+<p><strong>Booking Date:</strong> 25 July 2026</p>
+
+<p><strong>Guests:</strong> 2</p>
+
+<p class="total">
+Total Amount : ₹4,999
+</p>
+
+</div>
+
+<h3>Select Payment Method</h3>
+
+<label class="payment-option">
+<input type="radio" name="payment" checked>
+UPI (Google Pay / PhonePe / Paytm)
+</label>
+
+<label class="payment-option">
+<input type="radio" name="payment">
+Credit / Debit Card
+</label>
+
+<label class="payment-option">
+<input type="radio" name="payment">
+Net Banking
+</label>
+
+<label class="payment-option">
+<input type="radio" name="payment">
+Cash at Hotel
+</label>
+
+<button onclick="window.location.href='confirmation.html'">
+Proceed to Pay
+</button>
+
+<div class="secure">
+🔒 100% Secure Payment
+</div>
+
+</div>
+
+</body>
+</html>
