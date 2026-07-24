@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fortune Hotel | Room Booking</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#1b1b1b;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:40px;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("images/hotel.jpg");
+    background-size:cover;
+    background-position:center;
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:45px;
+}
+
+.section-title{
+    text-align:center;
+    margin:40px 0;
+    color:#333;
+    font-size:35px;
+}
+
+.room-container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding-bottom:50px;
+}
+
+.room-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.room-card:hover{
+    transform:translateY(-8px);
+}
+
+.room-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.room-info{
+    padding:20px;
+}
+
+.room-info h3{
+    color:#222;
+    margin-bottom:10px;
+}
+
+.room-info p{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:26px;
+    color:#d35400;
+    font-weight:bold;
+    margin:15px 0;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    background:#ff9800;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e67e22;
+}
+
+footer{
+    background:#1b1b1b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>FORTUNE HOTEL</h1>
+</header>
+
+<section class="hero">
+<h2>Luxury Rooms Await You</h2>
+</section>
+
+<h2 class="section-title">Choose Your Room</h2>
+
+<div class="room-container">
+
+<div class="room-card">
+<img src="images/standard.jpg" alt="Standard Room">
+
+<div class="room-info">
+
+<h3>Standard Room</h3>
+
+<p>✔ Queen Size Bed</p>
+<p>✔ Free Wi-Fi</p>
+<p>✔ Air Conditioning</p>
+<p>✔ Smart TV</p>
+
+<div class="price">₹2,999 / Night</div>
+
+<button onclick="location.href='booking.html'">
+Book Now
+</button>
+
+</div>
+</div>
+
+<div class="room-card">
+
+<img src="images/deluxe.jpg" alt="Deluxe Room">
+
+<div class="room-info">
+
+<h3>Deluxe Room</h3>
+
+<p>✔ King Size Bed</p>
+<p>✔ City View</p>
+<p>✔ Complimentary Breakfast</p>
+<p>✔ Mini Bar</p>
+
+<div class="price">₹4,999 / Night</div>
+
+<button onclick="location.href='booking.html'">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+<div class="room-card">
+
+<img src="images/executive.jpg" alt="Executive Room">
+
+<div class="room-info">
+
+<h3>Executive Room</h3>
+
+<p>✔ Premium Interior</p>
+<p>✔ Balcony</p>
+<p>✔ Breakfast + Dinner</p>
+<p>✔ Work Desk</p>
+
+<div class="price">₹6,999 / Night</div>
+
+<button onclick="location.href='booking.html'">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+<div class="room-card">
+
+<img src="images/suite.jpg" alt="Suite">
+
+<div class="room-info">
+
+<h3>Royal Suite</h3>
+
+<p>✔ Luxury Living Room</p>
+<p>✔ Jacuzzi</p>
+<p>✔ Ocean View</p>
+<p>✔ Personal Butler</p>
+
+<div class="price">₹12,999 / Night</div>
+
+<button onclick="location.href='booking.html'">
+Book Now
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Fortune Hotel | Luxury Redefined
+
+</footer>
+
+</body>
+</html>
